@@ -112,6 +112,15 @@ module "eks" {
   tags                      = var.tags
 }
 
+module "monitoring" {
+  source = "./modules/monitoring"
+  
+  namespace               = "monitoring"
+  prometheus_storage_size = "50Gi"
+  grafana_admin_password  = var.grafana_password
+  
+  depends_on = [module.eks]
+}
 
 # ============================================================================
 # AWS-AUTH CONFIGMAP - Grant Console Access to EKS
