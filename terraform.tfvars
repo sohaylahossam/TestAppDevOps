@@ -65,3 +65,5 @@ tags = {
   ManagedBy   = "Terraform"
   Owner       = "DevOps-Team"
 }
+
+grafana_password = "YourStrongPassword123!"
