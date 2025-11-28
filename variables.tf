@@ -137,3 +137,8 @@ variable "tags" {
   default     = {}
 }
 
+variable "grafana_password" {
+  description = "Admin password for Grafana"
+  type        = string
+  sensitive   = true
+}
