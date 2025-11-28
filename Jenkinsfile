@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 echo "🔹 Checking out repository..."
-                git branch: 'main', url: 'https://github.com/sohaylahossam/HelloApp.git'
+                git branch: 'main', url: 'https://github.com/sohaylahossam/TestAppDevOps.git'
             }
         }
 
